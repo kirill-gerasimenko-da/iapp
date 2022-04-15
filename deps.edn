@@ -1,0 +1,11 @@
+{:paths   ["src" "classes"]
+ :deps    {cljfx/cljfx            {:mvn/version "1.7.19"}
+           org.clojure/core.cache {:mvn/version "1.0.225"}
+           org.clojure/clojure    {:mvn/version "1.11.1"}}
+ :aliases {:uberjar-cambada  {:extra-deps {luchiniatwork/cambada {:mvn/version "1.0.5"}}
+                              :main-opts  ["-m" "cambada.uberjar"
+                                           "-m" "iapp.core"
+                                           "--app-version" "0.0.1"]}
+           :uberjar-uberdeps {:replace-deps  {uberdeps/uberdeps {:mvn/version "1.1.4"}}
+                              :replace-paths []
+                              :main-opts     ["-m" "uberdeps.uberjar"]}}}
