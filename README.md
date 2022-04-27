@@ -7,6 +7,6 @@ Helper for entering password for the client-banking like Ing Bank.
 **Build uberjar**
 
 ```shell
-deps -M -e "(compile 'iapp.core) (javafx.application.Platform/exit)"
-deps -M:uberjar-uberdeps --main-class iapp.core
+clj -M -e "(compile 'iapp.core) (javafx.application.Platform/exit)"
+clj -M:uberjar-uberdeps --main-class iapp.core
 ```
