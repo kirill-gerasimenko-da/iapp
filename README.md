@@ -1,10 +1,10 @@
-*Description*
+**Description**
 
 Helper for entering password for the client-banking like Ing Bank.
 
 ![Screenshot](/screenshot.png)
 
-*Build uberjar*
+**Build uberjar**
 
 ```shell
 deps -M -e "(compile 'iapp.core) (javafx.application.Platform/exit)"
